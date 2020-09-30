@@ -30,9 +30,9 @@ par_born=born.find_parent('td')
 if par_born.find('span',class_="nickname"):
 	print("Nickname:"+par_born.find('span',class_="nickname").string)
 else:
-    print("Nickname can't be displayed")
+    print("Nickname can't be displayed, please try again")
 
-vijay=(''.join(par_born.findAll(text=True))).encode("utf-8")
+answer =(''.join(par_born.findAll(text=True))).encode("utf-8")
 
-print(vijay)
+print(answer)
 
